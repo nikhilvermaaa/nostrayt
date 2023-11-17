@@ -1,0 +1,351 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common styles for text and paragraph boxes */
+.about-text,
+.paragraph-box {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    font-family: 'Helvetica', sans-serif;
+    animation: glow 2s infinite alternate;
+}
+
+/* Add CSS styles for the About Nikhil Verma section */
+.about-section {
+    background: linear-gradient(135deg, #3f87a6, #4b6cb7);
+    padding: 60px 0;
+    border-bottom: 8px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add animation for the text glow effect */
+.paragraph-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    font-family: 'Georgia', serif;
+    animation: textGlow 2s infinite alternate;
+    word-wrap: break-word;
+}
+
+/* Keyframe animation for the text glow effect */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        text-shadow: 0 0 20px rgb(53, 72, 73);
+    }
+}
+
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the about section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the about content */
+.about-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Style the about image */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add CSS styles for the About Nikhil Verma section */
+.about-section {
+    background: linear-gradient(135deg, #3f87a6, #4b6cb7);
+    padding: 60px 0;
+    border-bottom: 8px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the about image */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Add a border radius for rounded image */
+    border: 2px solid #f9f9f9; /* Add a border to the image */
+    animation: imageGlow 2s infinite alternate, imageInOut 4s infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .paragraph-box {
+    animation: fadeIn 4s ease-in-out 4s;
+  }
+
+  .paragraph-box {
+    transition: background 0.5s ease-in-out 4s, transform 0.5s ease-in-out 4s;
+  }
+
+  .paragraph-box {
+    box-shadow: 0 0 10px rgba(255, 87, 51, 0); /* No glow initially */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .paragraph-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Add glow on hover */
+  }
+
+  .paragraph-box {
+    animation: fadeIn 1.5s ease-in 4s;
+  }
+
+  .paragraph-box {
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out 4s;
+  }
+
+  .paragraph-box {
+    box-shadow: 0 0 10px rgba(255, 87, 51, 0); /* No glow initially */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .paragraph-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Add glow on hover */
+  }
+
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 83px;
+    height: 83px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+  
+  
+
+
+    /* The mobile-first pre-defined media queries: */
+  /* xs */
+  @media (min-width: 475px) {}
+  
+  /* sm */
+  @media (min-width: 640px) {}
+  
+  /* md */
+  @media (min-width: 768px) {}
+  
+  /* lg */
+  @media (min-width: 1024px) {}
+  
+  /* xl */
+  @media (min-width: 1280px) {}
+  
+  /* 2xl */
+  @media (min-width: 1536px) {}
+  
+  /* The desktop-first pre-defined media queri
+  /* 2xl */
+  @media (max-width: 1536px) {}
+  
+  /* xl */
+  @media (max-width: 1280px) {}
+  
+  /* lg */
+  @media (max-width: 1024px) {}
+  
+  /* md */
+  @media (max-width: 768px) {}
+  
+  /* sm */
+  @media (max-width: 640px) {}
+  
+  /* xs */
+  @media (max-width: 475px) {}
+  
+  /* Mobile container utility class: */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  /* xs */
+  @media (min-width: 475px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* sm */
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  /* md */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* lg */
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+  
+  /* Desktop container utility class: */
+  .container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  /* 2xl */
+  @media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+  }
